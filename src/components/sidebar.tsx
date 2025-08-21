@@ -2,6 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Navbar } from "./navbar/navbar";
 import { ProfileTab } from "./navbar/profile-tab";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 
 interface Props {
   className?: string;
@@ -17,7 +18,11 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
     >
       <div>
         <div className="mt-[55px] flex gap-3 items-center">
-          {logo}
+          <Avatar>
+            <AvatarFallback className="bg-[#FF9F24] text-white">
+              C
+            </AvatarFallback>
+          </Avatar>
           <h1 className="text-[20px] font-semibold">TESTAPP</h1>
         </div>
         <Navbar />
@@ -26,9 +31,3 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
     </div>
   );
 };
-
-const logo = (
-  <div className="rounded-full bg-[#FF9F24] w-8 h-8 flex items-center justify-center text-white">
-    C
-  </div>
-);

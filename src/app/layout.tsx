@@ -26,7 +26,9 @@ export default function RootLayout({
       >
         <div className="flex w-full h-full">
           <Sidebar />
-          <div className="w-full h-full bg-[#F7F9FD]">{children}</div>
+          <div className="w-full h-full bg-[#F7F9FD] overflow-y-auto">
+            {children}
+          </div>
         </div>
       </body>
     </html>
