@@ -27,7 +27,9 @@ export default function Profile() {
           </span>
         </div>
 
-        <Button className="self-end max-w-[272px] w-full text-[12px]">Save</Button>
+        <Button className="max-w-full self-end md:max-w-[272px] w-full text-[12px]">
+          Save
+        </Button>
       </div>
     </div>
   );

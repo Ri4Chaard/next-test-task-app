@@ -12,7 +12,7 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
   return (
     <div
       className={cn(
-        "max-w-[220px] w-full flex flex-col justify-between px-7 bg-white",
+        "hidden max-w-[220px] w-full md:flex flex-col justify-between px-7 bg-white",
         className
       )}
     >

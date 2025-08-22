@@ -10,7 +10,10 @@ interface Props {
 export const ProfileSidebar: React.FC<Props> = ({ className }) => {
   return (
     <div
-      className={cn("max-w-[312px] w-full px-7 pb-[26px] bg-white", className)}
+      className={cn(
+        "hidden lg:block max-w-[312px] w-full px-7 pb-[26px] bg-white",
+        className
+      )}
     >
       <ProfileInfo />
     </div>

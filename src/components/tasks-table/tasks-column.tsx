@@ -21,7 +21,7 @@ export const TasksColumn: React.FC<Props> = ({ tasks, header }) => {
 
   return (
     <div>
-      <h3 className="font-medium">
+      <h3 className="text-xl md:text-base font-medium">
         {header} ({tasks.length})
       </h3>
       <div className="grid grid-cols-1 gap-y-6 mt-4">

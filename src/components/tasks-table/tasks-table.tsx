@@ -27,7 +27,7 @@ export const TasksTable: React.FC<Props> = ({ className }) => {
   }
 
   return (
-    <div className={cn("grid grid-cols-4 gap-x-8", className)}>
+    <div className={cn("grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8", className)}>
       <TasksColumn
         tasks={parsedData.filter((data) => data.status === TASK_STATUS.TODO)}
         header={"To do"}
