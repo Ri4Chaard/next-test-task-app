@@ -21,6 +21,7 @@ export default function Profile() {
             inputLabel="Password"
             id="password"
             placeholder="Enter password"
+            type="password"
           />
           <span className="text-[12px] text-[#666666]">
             Your password is between 4 and 12 characters
