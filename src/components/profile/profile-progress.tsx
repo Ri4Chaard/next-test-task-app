@@ -21,7 +21,7 @@ export const ProfileProgress: React.FC<Props> = ({ className }) => {
       <div
         className="absolute inset-0 rounded-full -rotate-30"
         style={{
-          background: `conic-gradient(#10B981 ${progress}%, #FFFFFF ${progress}% 100%)`,
+          background: `conic-gradient(#64C882 ${progress}%, #FFFFFF ${progress}% 100%)`,
         }}
       />
 
