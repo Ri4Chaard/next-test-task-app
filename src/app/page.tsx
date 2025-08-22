@@ -1,6 +1,6 @@
-import { HomePageHeader } from "@/components/home-page-header";
+import { HeaderTitle } from "@/components/header-title";
 import { TasksTable } from "@/components/tasks-table/tasks-table";
-import { tasksOptions, useTasks } from "@/hooks/useTasks";
+import { tasksOptions } from "@/hooks/useTasks";
 import { getQueryClient } from "@/utils/get-query-client";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 
@@ -9,8 +9,8 @@ export default function Home() {
   void queyClient.prefetchQuery(tasksOptions);
 
   return (
-    <div className="px-8 py-10">
-      <HomePageHeader />
+    <div className="w-full h-full px-8 py-10 bg-[#F7F9FD] overflow-y-auto">
+      <HeaderTitle title="My Tasks" />
       <HydrationBoundary state={dehydrate(queyClient)}>
         <TasksTable className="mt-7 " />
       </HydrationBoundary>

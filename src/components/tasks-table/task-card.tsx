@@ -3,11 +3,14 @@ import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback } from "../ui/avatar";
 import { parseDate } from "@/utils/parseDate";
+import { TaskStatusType } from "@/types/tasks-types";
+import { TimeIcon } from "./icons/time-icon";
 
 interface Props {
   className?: string;
   title: string;
   description: string;
+  status: TaskStatusType;
   createdAt: Date;
 }
 
@@ -15,6 +18,7 @@ export const TaskCard: React.FC<Props> = ({
   className,
   title,
   description,
+  status,
   createdAt,
 }) => {
   const date = useMemo(() => parseDate(createdAt), [createdAt]);
@@ -43,7 +47,14 @@ export const TaskCard: React.FC<Props> = ({
         </div>
       </div>
       <div className="flex justify-between items-center">
-        <Button>{date.date + " " + date.month} </Button>
+        <Button
+          className="cursor-auto"
+          disabled={status === "completed"}
+          variant={status === "completed" ? "disabled" : "default"}
+        >
+          <TimeIcon />
+          {date.date + " " + date.month}{" "}
+        </Button>
         <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
           <Avatar>
             <AvatarFallback />

@@ -1,4 +1,3 @@
-import { ITask } from "@/interfaces/tasks-interfaces";
 import api from "@/utils/axios";
 import { queryOptions, useSuspenseQuery } from "@tanstack/react-query";
 

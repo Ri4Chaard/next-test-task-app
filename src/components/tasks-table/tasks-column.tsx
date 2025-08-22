@@ -31,6 +31,7 @@ export const TasksColumn: React.FC<Props> = ({ tasks, header }) => {
               key={task.id}
               title={task.title}
               description={task.description}
+              status={task.status}
               createdAt={task.createdAt}
             />
           ) : (
