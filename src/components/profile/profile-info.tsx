@@ -12,7 +12,7 @@ export const ProfileInfo: React.FC<Props> = ({ className }) => {
     <div className={cn("h-full flex flex-col justify-between", className)}>
       <div>
         <div className="mt-10 flex flex-col gap-1">
-          <h2 className="text-[20px] font-medium">My Profile</h2>
+          <h2 className="text-xl font-medium">My Profile</h2>
           <span className="text-emerald text-sm">
             75% completed your profile
           </span>
@@ -30,7 +30,7 @@ export const ProfileInfo: React.FC<Props> = ({ className }) => {
         </div>
       </div>
       <Button variant="destructive">
-        <span className="text-[12px] font-bold">Logout</span>
+        <span className="text-xs font-bold">Logout</span>
       </Button>
     </div>
   );

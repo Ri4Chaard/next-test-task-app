@@ -1,6 +1,6 @@
 import { HeaderTitle } from "@/components/header-title";
 import { TasksTable } from "@/components/tasks-table/tasks-table";
-import { tasksOptions } from "@/hooks/useTasks";
+import { tasksOptions } from "@/hooks/use-tasks";
 import { getQueryClient } from "@/utils/get-query-client";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 

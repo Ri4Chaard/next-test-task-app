@@ -13,7 +13,6 @@ interface Props {
 
 export const Navbar: React.FC<Props> = ({ className }) => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <nav className={cn("mt-10 flex flex-col gap-3", className)}>

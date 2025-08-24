@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { ITask } from "@/interfaces/tasks-interfaces";
+import { ITask } from "@/types/tasks-types";
 import { TaskCard } from "./task-card";
 import { TaskCardSkeleton } from "./task-card-skeleton";
 

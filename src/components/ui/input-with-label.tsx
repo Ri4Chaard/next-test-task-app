@@ -14,7 +14,7 @@ export const InputWithLabel: React.FC<Props> = ({
 }) => {
   return (
     <div className={cn("flex flex-col gap-2", className)}>
-      <label className="text-[12px] font-semibold text-[#666666]" htmlFor={props.id}>
+      <label className="text-xs font-semibold text-[#666666]" htmlFor={props.id}>
         {inputLabel}
       </label>
       <Input {...props} />

@@ -23,7 +23,7 @@ export const Sidebar: React.FC<Props> = ({ className }) => {
               C
             </AvatarFallback>
           </Avatar>
-          <h1 className="text-[20px] font-semibold">TESTAPP</h1>
+          <h1 className="text-xl font-semibold">TESTAPP</h1>
         </div>
         <Navbar />
       </div>

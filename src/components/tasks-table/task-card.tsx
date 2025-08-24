@@ -1,8 +1,8 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback } from "../ui/avatar";
-import { parseDate } from "@/utils/parseDate";
+import { parseDate } from "@/utils/parse-date";
 import { TaskStatusType } from "@/types/tasks-types";
 import { TimeIcon } from "./icons/time-icon";
 
@@ -21,7 +21,7 @@ export const TaskCard: React.FC<Props> = ({
   status,
   createdAt,
 }) => {
-  const date = useMemo(() => parseDate(createdAt), [createdAt]);
+  const date = parseDate(createdAt);
   return (
     <div
       className={cn(

@@ -1,6 +1,5 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Avatar, AvatarFallback } from "./ui/avatar";
 import { ProfileInfo } from "./profile/profile-info";
 
 interface Props {

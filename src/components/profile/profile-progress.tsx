@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const ProfileProgress: React.FC<Props> = ({ className }) => {
-  const [progress, setProgress] = useState<number>(75);
+  const [progress] = useState<number>(75);
 
   return (
     <div

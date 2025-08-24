@@ -1,6 +1,5 @@
-import { TaskStatusType } from "@/types/tasks-types";
-import { useTasks } from "./useTasks";
-import { ITask } from "@/interfaces/tasks-interfaces";
+import { ITask, TaskStatusType } from "@/types/tasks-types";
+import { useTasks } from "./use-tasks";
 
 export const useParsedTasks = () => {
   const { data, isLoading, isError } = useTasks();

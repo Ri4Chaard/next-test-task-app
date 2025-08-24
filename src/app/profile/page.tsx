@@ -1,6 +1,5 @@
 import { HeaderTitle } from "@/components/header-title";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { InputWithLabel } from "@/components/ui/input-with-label";
 
 export default function Profile() {
@@ -23,12 +22,12 @@ export default function Profile() {
             placeholder="Enter password"
             type="password"
           />
-          <span className="text-[12px] text-[#666666]">
+          <span className="text-xs text-[#666666]">
             Your password is between 4 and 12 characters
           </span>
         </div>
 
-        <Button className="max-w-full self-end md:max-w-[272px] w-full text-[12px]">
+        <Button className="max-w-full self-end md:max-w-[272px] w-full text-xs">
           Save
         </Button>
       </div>
